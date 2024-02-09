@@ -5,7 +5,7 @@ body {
     font-family: Arial, sans-serif; /* Set the font family */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-    background-image: url("static/images/Website background 1920x1080.webp"); /* Path to your background image */
+    background-image: url("../images/Website background 1920x1080.webp"); /* Path to your background image */
     background-size: cover; /* Cover the entire background */
     background-position: center; /* Center the background image */
     background-color: #cccccc;
