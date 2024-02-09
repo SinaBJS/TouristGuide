@@ -1,0 +1,7 @@
+POST http://localhost:8080/attractions/add
+Content-Type: application/json
+
+{
+  "name": "Eiffel Tower",
+  "description": "Iconic landmark"
+}

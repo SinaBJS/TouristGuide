@@ -22,21 +22,29 @@ public class TouristController {
     }
 
 // get all attractions
-    @GetMapping("/{allattractions}")
+    @GetMapping()
     public ResponseEntity<List<TouristAttraction>> findAllAttractions(){
         return ResponseEntity.ok(touristService.findAllAttractions());
     }
-    @GetMapping("/{name}")
+    @GetMapping("/{attractionName}")
     public ResponseEntity<TouristAttraction> findAttractionByName(@PathVariable String attractionName){
         return ResponseEntity.ok(touristService.findAttractionByName(attractionName));
     }
-    @PostMapping
+    @PostMapping("/add")
     public ResponseEntity<?> addAttraction(@RequestBody TouristAttraction touristAttraction){
         touristService.addAttraction(touristAttraction);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
+    @PostMapping("/edit")
+    public ResponseEntity<?> editAttraction(@RequestBody String nameOfAttraction, String newName, String newDescription){
+        touristService.editAttraction(nameOfAttraction, newName, newDescription);
+        return new ResponseEntity<>(HttpStatus.OK);
 
+}
+    @GetMapping("/delete/{attractionName}")
+    public ResponseEntity<TouristAttraction> deleteAttraction(@PathVariable String attractionName) {
+        touristService.deleteAttractions(attractionName);
+        return  new ResponseEntity<>(HttpStatus.OK);
 
-
-
+    }
 }
