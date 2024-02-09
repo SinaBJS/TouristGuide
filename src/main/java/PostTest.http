@@ -1,7 +1,8 @@
-POST http://localhost:8080/attractions/add
+POST http://localhost:8080/attractions/edit
 Content-Type: application/json
 
 {
-  "name": "Eiffel Tower",
-  "description": "Iconic landmark"
+  "nameOfAttraction": "EiffelTower",
+  "newName": "The Eiffel Tower",
+  "newDescription": "an iconic french landmark"
 }

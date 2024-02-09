@@ -24,8 +24,8 @@ this.touristRepository =  new TouristRepository();
     public void addAttraction(TouristAttraction attractionToAdd){
         touristRepository.addAttraction(attractionToAdd);
     }
-    public void editAttraction(String nameOfattractionToUpdate, String newName, String newDescription){
-        touristRepository.editAttraction(nameOfattractionToUpdate, newName, newDescription);
+    public void editAttraction(String nameAttractionToUpdate, String newName, String newDescription){
+        touristRepository.editAttraction(nameAttractionToUpdate, newName, newDescription);
     }
     public void deleteAttractions(String nameOfAttractionToRemove){
         touristRepository.deleteAttraction(nameOfAttractionToRemove);

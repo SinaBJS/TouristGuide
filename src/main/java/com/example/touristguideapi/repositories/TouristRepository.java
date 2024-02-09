@@ -46,10 +46,10 @@ public class TouristRepository {
 
     }
 
-    public void editAttraction(String nameOfattractionToUpdate, String newName, String newDescription) {
+    public void editAttraction(String nameAttractionToUpdate, String newName, String newDescription) {
 
         for (TouristAttraction touristAttraction : touristAttractions) {
-            if (nameOfattractionToUpdate.equalsIgnoreCase(touristAttraction.getName())) {
+            if (nameAttractionToUpdate.equalsIgnoreCase(touristAttraction.getName())) {
                 touristAttraction.setName(newName);
                 touristAttraction.setDescription(newDescription);
 

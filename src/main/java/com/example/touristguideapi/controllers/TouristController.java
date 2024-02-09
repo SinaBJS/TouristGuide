@@ -22,7 +22,7 @@ public class TouristController {
     }
 
 // get all attractions
-    @GetMapping()
+    @GetMapping
     public ResponseEntity<List<TouristAttraction>> findAllAttractions(){
         return ResponseEntity.ok(touristService.findAllAttractions());
     }
