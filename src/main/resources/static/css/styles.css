@@ -1,0 +1,42 @@
+/* styles.css */
+
+/* Apply styles to the body */
+body {
+    font-family: Arial, sans-serif; /* Set the font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-image: url("static/images/Website background 1920x1080.webp"); /* Path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-color: #cccccc;
+
+}
+
+/* Apply styles to the h1 element */
+h1 {
+    text-align: center; /* Center-align the heading */
+    margin-top: 20px; /* Add some top margin */
+}
+
+/* Apply styles to the paragraph elements */
+p {
+    margin: 10px 0; /* Add vertical margin */
+    line-height: 1.5; /* Set the line height */
+}
+
+/* Apply styles to the navigation links */
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: blue; /* Set link color */
+}
+
+nav a:hover {
+    color: darkblue; /* Change color on hover */
+}
+
+/* Apply styles to the footer */
+footer {
+    background-color: #cccccc; /* Set background color */
+    padding: 10px; /* Add padding */
+    text-align: center; /* Center-align the content */
+}
